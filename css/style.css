@@ -1,0 +1,322 @@
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+         url('../fonts/gilroyextrabold.woff') format('woff'),
+         url('../fonts/gilroyextrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Gilroy Light"), local("Gilroy-Light"),
+         url('../fonts/gilroylight.woff') format('woff'),
+         url('../fonts/gilroylight.woff2') format('woff2');
+}
+
+/*   G   E   N   E   R   A   L   */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 300;
+    color: #464646;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.invisible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.list-reset,
+.list-reset li {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.btn-lettered {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+/*   B   U   T   T   O   N   S   */
+
+.btn {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+   
+    color: inherit;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: center;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+  
+    white-space: nowrap;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.btn:focus {
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.selected-sv {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-align: center;
+    color: #f7e184;
+}
+
+
+/*   H   E   A   D   E   R   */
+
+.main-header {
+    background-color: rgba(240, 197, 46, 0.5);
+}
+
+.main-header-logo {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 1);
+}
+
+.main-header a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field {
+    border: none;
+    outline: none;
+    background-color: inherit;
+
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
+
+    border-bottom: 2px solid transparent;
+}
+
+.search-field:hover::placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:focus {
+    border-bottom: 2px solid #000;
+}
+
+.search-field:focus::placeholder {
+    color: rgba(0, 0, 0, 1);
+}
+
+.search-field:focus +.search-btn {
+    border: 2px solid #000;
+}
+
+/*
+.search-btn-txt {
+    opacity:0;
+}
+*/
+
+.userbar-btn {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+}
+
+.main-header .userbar-btn:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*
+.main-header .userbar-btn:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+*/
+
+.main-header .userbar-btn:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-menu-link {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.nav-submenu-link {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2.4;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+/*   S   L   I   D   E   R   */
+
+.slide-num {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 179px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    color: #fff;
+}
+
+.supreme {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 47px;
+    line-height: 1.19;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #000;
+}
+
+.specs-content {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 36px;
+    line-height: 1.33;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #000;
+}
+
+.specs-name {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.54;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #464646;
+}
+
+
+/*   C   A   T   A   L   O   G   */
+
+.showcase-link{
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.showcase-link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*   S   E   R   V   I   C   E   S   */
+
+.services-container {
+    background-color: #e5e5e5;
+}
+
+/*   B   R   A   N   D   S   */
+
+
+
+/*   I  N   F   O   B   L   O   C   K   */
+
+.option-item {
+    list-style-type: circle
+}
+
+.option-text {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-weight: 800;
+}
+
+/*   F   O   O   T   E   R   */
+
+.main-footer {
+    background-color: #464646;
+    color: #fff;
+}
+
+.main-footer-logo {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 800;
+    color: #ffc600;
+}
+
+.nav-footer-link {
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/*   M   O   D   A   L   */
+
+.field-title{
+    font-family: "Gilroy", Arial Black, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
